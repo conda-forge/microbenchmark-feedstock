@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.2"
+  version: "0.0.3"
 
 package:
   name: microbenchmark
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/microbenchmark/microbenchmark-${{ version }}.tar.gz
-  sha256: 93d9b8ce52090c2f4ab29dbe44f2f2f3fad4583440b8c81d333e9ef31ab75c49
+  sha256: cf5e6c4140210a9832172ce7021a42125eba6f1333f577e614727d97bfafb539
 
 build:
   number: 0
@@ -30,7 +30,7 @@ tests:
       imports:
         - microbenchmark
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
